@@ -1,0 +1,209 @@
+@media (max-width: 1000px) {
+
+    body {
+
+        width: 100vw;
+        height: 100vh;
+        background-color: hsl(204, 43%, 93%);
+        margin: 0 auto;
+    }
+
+    .grid {
+        overflow: hidden;
+        position: unset;
+        background-color: white;
+        height: 100%;
+        width: 100vw;
+        /* -----------grid----------- */
+        display: grid;
+        grid-template-rows: 30vh 35vh 35vh;
+        grid-template-columns: 100vw;
+        grid-template-areas:
+            'div1'
+            'div2'
+            'div3';
+        border: none;
+    }
+
+    /* ----------------------------------------------------------------------------------------------------- */
+
+    #div1 {
+        background-color: rgb(255, 255, 255);
+        grid-area: div1;
+        width: 100vw;
+        height: 100%;
+        border-radius: 5px;
+    }
+
+    /* ----------------------------------------------------------------------------------------------------- */
+    #div2 {
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #f0ffff;
+        background-color: hsl(179, 62%, 43%);
+        grid-area: div2;
+        width: 100%;
+        height: 100%;
+        border-radius: 0px;
+
+    }
+
+    /* ----------------------------------------------------------------------------------------------------- */
+    #div3 {
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #f0ffff;
+        background-color: #49bebd;
+        grid-area: div3;
+        width: 100%;
+        height: 100%;
+        border-radius: 0 0 5px 0;
+
+    }
+
+    /* -------------------------------div1 elementos------------------------------------------------ */
+    #section1 {
+        padding: 0 0 0 0%;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    #text1 {
+        color: hsl(179, 62%, 43%);
+        font-weight: 700;
+        font-size: 25px;
+        letter-spacing: 1px;
+        padding-top: 0px;
+        padding-bottom: 5px;
+        padding-right: 0px;
+        margin: 0;
+        border: none;
+    }
+
+    #text2 {
+        color: hsl(71, 73%, 54%);
+        font-size: 16px;
+        font-weight: 700;
+        margin: 0;
+        letter-spacing: 0.9px;
+    }
+
+    #text3 {
+        padding-right: 10px;
+        padding-top: 8px;
+        margin: 0;
+        color: #b1b5b8;
+        font-size: 15px;
+        letter-spacing: 0.5px;
+        line-height: 22px;
+        font-weight: 400;
+        width: 90vw;
+        white-space: pre-wrap;
+        text-align: justify;
+        word-wrap: break-word;
+    }
+
+    /* -------------------------------div2 elementos------------------------------------------------ */
+    #priceflex {
+        display: flex;
+        width: 100%;
+        height: 20%;
+
+    }
+
+    #sub {
+        font-size: 25px;
+        padding-top: 32px;
+        position: relative;
+        left: -9px;
+        margin: 0;
+    }
+
+    #price {
+        padding-top: 12px;
+        font-size: 30px;
+        font-weight: 700;
+        width: 30%;
+        height: 5%;
+        position: relative;
+        left: 96px;
+        margin: 0;
+        padding-left: 15px;
+    }
+
+    #per {
+        color: #70d4db;
+        padding-top: 21px;
+        padding-left: 40px;
+        margin: 0;
+        font-size: 20px;
+
+    }
+
+    #full {
+        color: #aef5f5;
+        position: relative;
+        padding-top: 8px;
+        left: -2px;
+        font-size: 18px;
+        margin: 0;
+    }
+
+    button {
+        margin: 0;
+        color: white;
+        width: 195px;
+        height: 39px;
+        background-color: hsl(71, 73%, 54%);
+        border: none;
+        border-radius: 0.5vh;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+        font-weight: 700;
+
+    }
+
+    #button {
+        position: relative;
+        right: 33px;
+        width: 195px;
+        height: 39px;
+        padding-top: 22px;
+        margin-bottom: 32px;
+    }
+
+    button:hover {
+        background-color: hsl(71, 73%, 54%);
+        /* background-color: hsl(71, 62%, 47%); */
+        box-shadow: rgba(50, 50, 93, 0.11) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+        cursor: pointer;
+    }
+
+    /* -------------------------------div3 elementos------------------------------------------------ */
+    #why {
+        font-size: 25px;
+        padding-top: 25px;
+        padding-left: 15px;
+        margin: 0;
+        position: relative;
+        right: 10px;
+    }
+
+    #reasons {
+        color: #9bf0f3;
+        font-size: 20px;
+        padding-top: 10px;
+        padding-left: 0px;
+        margin: 0;
+        line-height: 20px;
+    }
+
+}

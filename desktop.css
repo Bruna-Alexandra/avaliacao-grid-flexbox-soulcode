@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+
+
+* {
+    font-family: 'PT Sans', sans-serif;
+
+}
+
+body {
+    width: 100vh;
+    height: 100vh;
+    background-color: hsl(204, 43%, 93%);
+    margin: 0 auto;
+}
+
+/* ----------------------------------animação----------------------------------------------- */
+#div1 {
+    opacity: 1;
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 1.2s;
+}
+
+#div2 {
+    opacity: 1;
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 2.5s;
+}
+
+#div3 {
+    opacity: 1;
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 3s;
+}
+
+
+@keyframes fadeInOpacity {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* ----------------------------------------------------------------------------------------------------- */
+.grid {
+    background-color: white;
+    position: relative;
+    left: 10%;
+    top: 20.5%;
+    height: 390px;
+    width: 522px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    /* -----------grid----------- */
+    display: grid;
+    grid-template-rows: 177px 213px;
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+        'div1 div1'
+        'div2 div3';
+    border-radius: 5px;
+}
+
+/* ----------------------------------------------------------------------------------------------------- */
+#div1 {
+    background-color: white;
+    grid-area: div1;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+
+}
+
+#div1:hover {
+    box-shadow: rgba(50, 50, 93, 0.11) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.103) 0px 18px 36px -18px inset;
+}
+
+/* ----------------------------------------------------------------------------------------------------- */
+#div2 {
+    display: flex;
+    flex-direction: column;
+    color: #f0ffff;
+    background-color: hsl(179, 62%, 43%);
+    grid-area: div2;
+    width: 100%;
+    height: 100%;
+    border-radius: 0 0 0 5px;
+
+}
+
+#div2:hover {
+    box-shadow: rgba(50, 50, 93, 0.20) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.2) 0px 18px 36px -18px inset;
+}
+
+/* ----------------------------------------------------------------------------------------------------- */
+#div3 {
+    color: #f0ffff;
+    background-color: #49bebd;
+    grid-area: div3;
+    width: 100%;
+    height: 100%;
+    border-radius: 0 0 5px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#div3:hover {
+    /* background-color: rgb(34, 146, 144) */
+    box-shadow: rgba(50, 50, 93, 0.2) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.2) 0px 18px 36px -18px inset;
+}
+
+/* -------------------------------div1 elementos------------------------------------------------ */
+
+#section1 {
+    /* width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column; */
+    padding-left: 6.4%;
+    padding-top: 2%;
+
+}
+
+#text1 {
+    padding-top: 2%;
+    color: hsl(179, 62%, 43%);
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 1px;
+    padding-top: 22px;
+    padding-bottom: 17px;
+    margin: 0;
+
+}
+
+#text2 {
+    color: hsl(71, 73%, 54%);
+    font-size: 14.4px;
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: 0.9px;
+
+}
+
+#text3 {
+
+    padding-top: 8px;
+    margin: 0;
+    color: #b1b5b8;
+    font-size: 12.5px;
+    letter-spacing: 0.5px;
+    line-height: 22px;
+    font-weight: 400;
+}
+
+/* -------------------------------div2 elementos------------------------------------------------ */
+#priceflex {
+    display: flex;
+    width: 100%;
+    height: 20%;
+
+}
+
+#sub {
+    padding-top: 32px;
+    position: relative;
+    left: 31px;
+    margin: 0;
+}
+
+#price {
+    padding-top: 12px;
+    font-size: 25px;
+    font-weight: 700;
+    width: 30%;
+    height: 5%;
+    position: relative;
+    left: 31px;
+    margin: 0;
+}
+
+#per {
+    color: #70d4db;
+    padding-top: 21px;
+    padding-left: 3px;
+    margin: 0;
+    font-size: 13.5px;
+
+}
+
+#full {
+    color: #aef5f5;
+    position: relative;
+    padding-top: 8px;
+    left: 31px;
+    font-size: 13px;
+    margin: 0;
+}
+
+button {
+    position: relative;
+    left: 33px;
+    margin: 0;
+    color: white;
+    width: 195px;
+    height: 39px;
+    background-color: hsl(71, 73%, 54%);
+    border: none;
+    border-radius: 0.5vh;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    font-weight: 700;
+
+}
+
+#button {
+    width: 195px;
+    height: 39px;
+    padding-top: 22px;
+    margin-bottom: 32px;
+}
+
+button:hover {
+    background-color: hsl(71, 73%, 54%);
+    /* background-color: hsl(71, 62%, 47%); */
+    box-shadow: rgba(50, 50, 93, 0.11) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.10) 0px 18px 36px -18px inset;
+    cursor: pointer;
+}
+
+/* -------------------------------div3 elementos------------------------------------------------ */
+#why {
+    padding-top: 35px;
+    padding-left: 32px;
+    margin: 0;
+}
+
+#reasons {
+    color: #9bf0f3;
+    font-size: 12px;
+    padding-top: 15px;
+    padding-left: 32px;
+    margin: 0;
+    line-height: 16px;
+}
